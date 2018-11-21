@@ -1,6 +1,8 @@
-""" Project name.
+""" Modules of Standard algorithms functions for the SDD course.
 
-Description
+This scirpt will contain functions corresponding to all of the standard
+algorithms listed in the course specs for the HSC SDD course
+
 """
 
 __author__ = "Your Name"
@@ -56,3 +58,46 @@ class SampleClass(object):
 
 
 
+def loadArray():
+    """load data into an array.
+
+    prompts the user to enter data and
+    loads that data into an array.
+
+    Args:
+
+    Returns:
+
+    Raises:
+
+    """
+    thisArray = []
+    i = 0
+    dataValue = input("please enter some data, or 'xxx' to quit: ")
+    
+    while dataValue != 'xxx':
+        thisArray.append(dataValue)
+        i = i + 1
+        dataValue = input("please enter some data, or 'xxx' to quit: ")
+
+    numElements = i
+    print("There are " + str(numElements) + " items in the array")
+
+def printArray():
+    """Does something amazing.
+
+    a much longer description of the really amazing stuff this function does and how it does it.
+
+    Args:
+        arg1: the first argument required by the function.
+        arg2: the second argument required by the function.
+        other_silly_variable: Another optional variable, that has a much
+            longer name than the other args, and which does nothing.
+
+    Returns:
+        description of the stuff that is returned by the function.
+
+    Raises:
+        AnError: An error occurred running this function.
+    """
+    print("printArray called")
