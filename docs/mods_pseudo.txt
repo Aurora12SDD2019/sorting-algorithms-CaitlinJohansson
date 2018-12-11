@@ -1,0 +1,80 @@
+BEGIN FindMAX(inArray)
+	Let MaxIndex = 1
+	Let Max = inArray[1]
+	Let i = 1
+	WHILE i < NumElements in inArray
+	  IF inArray[i] > Max
+	    Let Max = inArray[i]
+		Let MaxIndex = i
+	  ENDIF
+	  
+	  i = i + 1
+	ENDWHILE
+	
+	Display “The highest value is ” Max “ at position ” MaxIndex
+
+	return [Max, MaxIndex]
+END FindMAX
+
+BEGIN FindMIN(inArray)
+	Display "FindMIN run as a stub"
+END FindMin
+
+BEGIN LinearSearch(inArray)
+	Display "LinearSearch run as a stub"
+END LinearSearch
+
+BEGIN BinarySearch(inArray)
+	Display "BinarySearch run as a stub"
+END BinarySearch
+
+BEGIN BubbleSort(inArray)
+	Display "BubbleSort run as a stub"
+END BubbleSort
+
+BEGIN Swap(item0, item1)
+	Display "Swap run as a stub"
+END Swap
+
+BEGIN SelectionSort(inArray)
+	Display "SelectionSort run as a stub"
+END SelectionSort
+
+BEGIN InsertionSort(inArray)
+	Display "InsertionSort run as a stub"
+END InsertionSort
+
+BEGIN InsertElement(inArray)
+	Display "InsertElement run as a stub"
+END InsertElement
+
+BEGIN SumArrayContents(inputArray)
+  Let i = 1
+  Let total = 0
+  WHILE i < NumElements in inputArray
+    Let total = total + inputArray[i]
+	i = i + 1
+  ENDWHILE
+  Display “ The sum of all of the elements in the array = ” total
+  return total
+END SumArrayContents
+
+BEGIN LoadArray
+  Let i = 1
+  Read DataValue
+  WHILE DataValue < > “xxx”
+    Let Element (i) = DataValue
+    i = i + 1
+    Read DataValue
+  ENDWHILE
+  Let NumElements = i
+  Display “ There are” NumElements “ items loaded into the array”
+END LoadArray
+
+BEGIN PrintArrayContents(inputArray)
+  Let i = 1
+  WHILE i < NumElements in inputArray
+    Display inputArray[i]
+    i = i + 1
+  ENDWHILE
+END PrintArrayContents
