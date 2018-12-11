@@ -60,7 +60,7 @@ def main():
     
     # finally lets insert a new element in the correct place
     newElement = 7
-    secondArray = InsertElement(firstArray, newElement)
+    secondArray = InsertElement(bubbleSortedArray, newElement)
     printArrayContents(secondArray)
 
 if __name__ == '__main__':
